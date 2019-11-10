@@ -21,12 +21,19 @@ public class UserDto {
 	@Pattern(regexp = "[A-Za-z]+", message = "Letters only!")
 	private String lastName;
 
+	@NotEmpty
 	@Email(message = "{error.user.email.regex}")
 	private String email;
 
+	@NotEmpty
 	@Pattern(regexp = "((.*)[A-Z]+(.*))", message = "Password should contain at least one capital letter")
 	@Size(min = 6, message = "Password must be at least 6 characters long")
 	private String password;
+
+	@NotEmpty
+	@Pattern(regexp = "((.*)[A-Z]+(.*))", message = "Confirm password should contain at least one capital letter")
+	@Size(min = 6, message = "Confirm password must be at least 6 characters long")
+	private String confirmPassword;
 
 
 }
