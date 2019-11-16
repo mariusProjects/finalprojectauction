@@ -11,7 +11,7 @@ import lombok.EqualsAndHashCode;
 @Data
 public class LoginDto {
 
-	private Integer id;
+	private String jwt;
 
 	@NotEmpty
 	@Email(message = "{error.user.email.regex}")

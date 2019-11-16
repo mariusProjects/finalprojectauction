@@ -71,7 +71,7 @@ public class UserServiceImpl implements UserService {
 			throw new RuntimeException("User account with this email address not existent!");
 		}
 		if (securityService.passwordMatch(loginDto, user)) {
-			return securityService.createDtoWithJwt(loginDto);
+			return securityService.createDtoWithJwt(user);
 		}
 		throw new RuntimeException("Passwords do not match!");
 	}
