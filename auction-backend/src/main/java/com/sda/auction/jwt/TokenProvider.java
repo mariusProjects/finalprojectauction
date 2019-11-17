@@ -60,30 +60,19 @@ public class TokenProvider implements InitializingBean {
 		}
 
 		Claims claims = optionalClaims.get();
-		//check for admin role
-		String[] adminProtected = adminProtectedPaths.split(",");
-		for (String path : adminProtected) {
-			if (requestURL.contains(path)) {
-				//se solicita o resursa admin protected
-				List<String> roles = claims.get("roles", ArrayList.class);
-				for (String role : roles) {
-					if (role.compareTo("admin") == 0) {
-						return true;
-					}
-				}
-				return false;
-			}
-		}
-//	check for user role
-		String[] userProtected = userProtectedPaths.split(",");
-		for (String path : userProtected) {
-			if (requestURL.contains(path)) {
-				//se solicita o resursa user protected
-				List<String> roles = claims.get("roles", ArrayList.class);
-				for (String role : roles) {
-					if (role.compareTo("user") == 0) {
-						return true;
-					}
+		return authorized(requestURL, adminProtectedPaths, "admin", claims)
+				&& authorized(requestURL, userProtectedPaths, "user", claims);
+	}
+
+	private boolean authorized(String requestURL, String protectedPaths, String role, Claims claims) {
+		//check all paths if they are included in requestURL
+		String[] roleProtectedPathsArray = protectedPaths.split(",");
+		for (String protectedPath : roleProtectedPathsArray) {
+			if (requestURL.contains(protectedPath)) {
+				//se solicita o resursa protejata de role
+				List<String> userRoles = claims.get("roles", ArrayList.class);
+				if (userRoles.contains(role)) {
+					return true;
 				}
 				return false;
 			}
