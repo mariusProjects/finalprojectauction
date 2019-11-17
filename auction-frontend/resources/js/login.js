@@ -44,7 +44,10 @@ function login() {
         const errorLine = errorLineStart + errorMessage + errorLineEnd;
         console.log(errorLine);
         var element = $("form#login_form .loginError");
-        $(element).append(errorLine);
+        if ($(element).children().length == 0) {
+          $(element).append(errorLine);
+        }
+
       }
 
     }
