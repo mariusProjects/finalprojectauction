@@ -31,9 +31,11 @@ public class TokenProvider implements InitializingBean {
 
 
 	public String createJwt(User user) {
+
 		return Jwts.builder()
 				.claim("email", user.getEmail())
 				.claim("roles", user.getRoles())
+				.claim("firstName",user.getFirstName())
 				.signWith(signatureAlgorithm, signingKey).compact();
 	}
 

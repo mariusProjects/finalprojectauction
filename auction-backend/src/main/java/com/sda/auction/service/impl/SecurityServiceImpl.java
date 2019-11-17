@@ -26,6 +26,7 @@ public class SecurityServiceImpl implements SecurityService {
 
 	@Override
 	public LoginDto createDtoWithJwt(User user) {
+
 		LoginDto result = new LoginDto();
 		result.setEmail(user.getEmail());
 		result.setPassword(user.getPassword());
