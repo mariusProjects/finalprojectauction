@@ -14,12 +14,8 @@ function login() {
     contentType: 'application/json',
     data: loginDto,
     success: function (data, textStatus, jQxhr) {
-
-      console.log('success: ' + JSON.stringify(data));
-      // const successLine = successLineStart + "Registration has been completed!"
-      //     + successLineEnd;
-      // var successElement = $("form#register_form .registerSuccessful");
-      // $(successElement).append(successLine);
+      localStorage.jwt = data.jwt;
+      console.log('success: ' + localStorage.jwt);
     },
     error: function (jqXhr, textStatus, errorThrown) {
       const errorsArray = jqXhr.responseJSON.errors;

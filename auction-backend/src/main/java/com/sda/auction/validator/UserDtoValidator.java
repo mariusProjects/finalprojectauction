@@ -3,6 +3,7 @@ package com.sda.auction.validator;
 import com.sda.auction.dto.UserDto;
 import com.sda.auction.model.User;
 import com.sda.auction.service.UserService;
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
