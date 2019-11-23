@@ -13,3 +13,6 @@ form#login_form p.success {
   color: green;
 }
 
+section.addItem_box_area .main-div{
+  margin: 0 auto;
+}
