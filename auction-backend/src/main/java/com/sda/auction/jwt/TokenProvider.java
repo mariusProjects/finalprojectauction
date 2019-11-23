@@ -16,6 +16,7 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 @Component
 public class TokenProvider implements InitializingBean {
@@ -50,46 +51,53 @@ public class TokenProvider implements InitializingBean {
 	}
 
 	public boolean validate(String jwt, String requestURL) {
-		if (requestURL.compareTo("/api/login") == 0
-				|| requestURL.compareTo("/api/register") == 0) {
-			return true;
-		}
 		Optional<Claims> optionalClaims = decodeJwt(jwt);
 		if (!optionalClaims.isPresent()) {
 			return false;
 		}
 
 		Claims claims = optionalClaims.get();
-		//check for admin role
-		String[] adminProtected = adminProtectedPaths.split(",");
-		for (String path : adminProtected) {
-			if (requestURL.contains(path)) {
-				//se solicita o resursa admin protected
-				List<String> roles = claims.get("roles", ArrayList.class);
-				for (String role : roles) {
-					if (role.compareTo("admin") == 0) {
-						return true;
-					}
-				}
-				return false;
-			}
-		}
-//	check for user role
-		String[] userProtected = userProtectedPaths.split(",");
-		for (String path : userProtected) {
-			if (requestURL.contains(path)) {
-				//se solicita o resursa user protected
-				List<String> roles = claims.get("roles", ArrayList.class);
-				for (String role : roles) {
-					if (role.compareTo("user") == 0) {
-						return true;
-					}
-				}
-				return false;
-			}
-		}
-		return true;
+		return isAuthoriezed(claims, requestURL);
 	}
+
+	private boolean isAuthoriezed(Claims claims, String requestURL) {
+		boolean result = true;
+		if (adminProtectedResource(requestURL)) {
+			result = hasRole("admin", claims);
+		} else if (userProtectedResource(requestURL)) {
+			result = hasRole("user", claims);
+		}
+		return result;
+	}
+
+	private boolean hasRole(String role, Claims claims) {
+		List<String> roles = claims.get("roles", ArrayList.class);
+		for (String each : roles) {
+			if (role.compareTo(each) == 0) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	private boolean userProtectedResource(String requestURL) {
+		return roleProtectedResource(requestURL, userProtectedPaths);
+	}
+
+	private boolean adminProtectedResource(String requestURL) {
+		return roleProtectedResource(requestURL, adminProtectedPaths);
+	}
+
+	private boolean roleProtectedResource(String requestURL, String roleProtectedPaths) {
+		String[] roleProtected = roleProtectedPaths.split(",");
+		for (String path : roleProtected) {
+			if (requestURL.contains(path)) {
+				return true;
+			}
+		}
+		return false;
+	}
+
 
 	private Optional<Claims> decodeJwt(String jwt) {
 		try {
@@ -104,9 +112,13 @@ public class TokenProvider implements InitializingBean {
 	}
 
 	public String getEmailFrom(String jwt) {
-		return Jwts.parser()
-				.setSigningKey(signingKey)
-				.parseClaimsJws(jwt)
-				.getBody().get("email", String.class);
+		try {
+			return Jwts.parser()
+					.setSigningKey(signingKey)
+					.parseClaimsJws(jwt)
+					.getBody().get("email", String.class);
+		} catch (Exception e) {
+			return "";
+		}
 	}
 }

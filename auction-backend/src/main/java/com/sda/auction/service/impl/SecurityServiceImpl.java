@@ -8,6 +8,7 @@ import javax.servlet.ServletRequest;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
@@ -21,6 +22,9 @@ public class SecurityServiceImpl implements SecurityService {
 	private BCryptPasswordEncoder passwordEncoder;
 	@Autowired
 	private TokenProvider tokenProvider;
+
+	@Value("${jwt.role.public}")
+	private String publicPaths;
 
 	@Override
 	public boolean passwordMatch(LoginDto userDto, User user) {
@@ -48,14 +52,30 @@ public class SecurityServiceImpl implements SecurityService {
 		HttpServletRequest httpServletRequest = (HttpServletRequest) servletRequest;
 
 		String requestURL = httpServletRequest.getRequestURI();
+		if (isPublicPath(requestURL)) {
+			return true;
+		}
+		String jwt = resolveToken(httpServletRequest);
+		return tokenProvider.validate(jwt, requestURL);
+	}
+
+	private boolean isPublicPath(String requestURL) {
+		String[] publicPathsArray = publicPaths.split(",");
+		for (String path : publicPathsArray) {
+			if (requestURL.compareTo(path) == 0) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	@Override
+	public void setEmailOn(ServletRequest servletRequest) {
+		HttpServletRequest httpServletRequest = (HttpServletRequest) servletRequest;
 		String jwt = resolveToken(httpServletRequest);
 
-		boolean result = tokenProvider.validate(jwt, requestURL);
-		if (result) {
-			String ownerEmail = tokenProvider.getEmailFrom(jwt);
-			httpServletRequest.setAttribute("ownerEmail", ownerEmail);
-		}
-		return result;
+		String userEmail = tokenProvider.getEmailFrom(jwt);
+		httpServletRequest.setAttribute("userEmail", userEmail);
 	}
 
 	//	"Bearer adsadsafisafsakjskjdsa.sadjsaksaksajk.sakjddsakdsakdsa"
