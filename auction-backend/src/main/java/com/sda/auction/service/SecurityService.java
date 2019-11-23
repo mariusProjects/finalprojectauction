@@ -13,4 +13,6 @@ public interface SecurityService {
 	LoginDto createDtoWithJwt(User user);
 
 	boolean isValid(ServletRequest servletRequest);
+
+	void setEmailOn(ServletRequest servletRequest);
 }
