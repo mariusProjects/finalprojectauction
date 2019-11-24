@@ -6,8 +6,10 @@ import com.sda.auction.model.Item;
 import com.sda.auction.model.User;
 import com.sda.auction.util.DateConverter;
 import java.text.ParseException;
+import java.util.ArrayList;
 import java.util.Base64;
 import java.util.Date;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -55,5 +57,13 @@ public class ItemMapper {
 		itemDto.setPhoto(photo);
 
 		return itemDto;
+	}
+
+	public List<ItemDto> convert(List<Item> allItems) {
+		List<ItemDto> result = new ArrayList<>();
+		for (Item item : allItems) {
+			result.add(convert(item));
+		}
+		return result;
 	}
 }

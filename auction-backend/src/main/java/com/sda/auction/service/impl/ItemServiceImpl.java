@@ -8,6 +8,8 @@ import com.sda.auction.repository.ItemRepository;
 import com.sda.auction.repository.UserRepository;
 import com.sda.auction.service.ItemService;
 import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -31,5 +33,11 @@ public class ItemServiceImpl implements ItemService {
 		Item savedItem = itemRepository.save(item);
 
 		return itemMapper.convert(savedItem);
+	}
+
+	@Override
+	public List<ItemDto> findAll() {
+		List<Item> allItems = itemRepository.findAll();
+		return itemMapper.convert(allItems);
 	}
 }
