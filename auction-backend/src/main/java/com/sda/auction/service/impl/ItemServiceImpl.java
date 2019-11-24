@@ -10,6 +10,7 @@ import com.sda.auction.service.ItemService;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -39,5 +40,16 @@ public class ItemServiceImpl implements ItemService {
 	public List<ItemDto> findAll() {
 		List<Item> allItems = itemRepository.findAll();
 		return itemMapper.convert(allItems);
+	}
+
+	@Override
+	public ItemDto findById(Integer id) {
+		Optional<Item> optionalItem = itemRepository.findById(id);
+		if (!optionalItem.isPresent()) {
+			throw new RuntimeException("Item with id " + id + " does not exist!");
+		}
+
+		Item item = optionalItem.get();
+		return itemMapper.convert(item);
 	}
 }

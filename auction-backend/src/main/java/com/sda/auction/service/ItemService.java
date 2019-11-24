@@ -10,4 +10,6 @@ public interface ItemService {
 
 
 	List<ItemDto> findAll();
+
+	ItemDto findById(Integer id);
 }

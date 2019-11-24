@@ -1,9 +1,7 @@
 package com.sda.auction.mapper;
 
 import com.sda.auction.dto.ItemDto;
-import com.sda.auction.dto.UserDto;
 import com.sda.auction.model.Item;
-import com.sda.auction.model.User;
 import com.sda.auction.util.DateConverter;
 import java.text.ParseException;
 import java.util.ArrayList;
@@ -51,7 +49,7 @@ public class ItemMapper {
 		String endDate = dateConverter.format(item.getEndDate());
 		itemDto.setEndDate(endDate);
 
-		itemDto.setId(item.getId());
+		itemDto.setId(item.getItemId());
 
 		String photo = new String(Base64.getDecoder().decode(item.getPhoto().getBytes()));
 		itemDto.setPhoto(photo);

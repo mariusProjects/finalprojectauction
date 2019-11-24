@@ -24,3 +24,6 @@ li.nav-item.userOnly,
 li.nav-item.adminOnly{
   display: none;
 }
+.itemPattern{
+  display: none;
+}

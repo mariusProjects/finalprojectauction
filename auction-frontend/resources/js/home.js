@@ -134,6 +134,17 @@ function register() {
 
 }
 
+function addItemOnPage(itemDto) {
+  console.log(itemDto + "!!!");
+  const newItem = $(".itemPattern").clone();
+  $(newItem).find(".itemName").html(itemDto.name);
+  $(newItem).find(".itemCategory").html(itemDto.category);
+  $(newItem).find(".itemPrice").html("$"+itemDto.startingPrice);
+  $(newItem).find(".itemImage").attr("src", itemDto.photo);
+  $(newItem).removeClass("itemPattern");
+  $(".itemList").append(newItem);
+}
+
 function getAllItemsForAdmin() {
   $.ajax({
     url: 'http://localhost:8080/api/admin/item',
@@ -143,13 +154,15 @@ function getAllItemsForAdmin() {
     contentType: 'application/json',
     success: function (itemList, textStatus, jQxhr) {
       console.log(itemList);
+      itemList.forEach(addItemOnPage);
+
+
     },
     error: function (jqXhr, textStatus, errorThrown) {
       console.log(jqXhr);
     }
   });
 }
-
 
 function setHeaderForUser() {
   $.ajax({
@@ -173,12 +186,9 @@ function setHeaderForUser() {
     }
   });
 }
+
 $(document).ready(function () {
   setHeaderForUser();
-
-
-
-
 
   $(".button.logout").click(function () {
     localStorage.jwt = "";

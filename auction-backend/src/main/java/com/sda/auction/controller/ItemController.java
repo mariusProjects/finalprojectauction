@@ -6,6 +6,7 @@ import java.text.ParseException;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+import net.bytebuddy.description.field.FieldDescription.InGenericShape;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -42,10 +43,11 @@ public class ItemController {
 	}
 
 	@GetMapping("/{id}")
-	public ResponseEntity<ItemDto> getById(@PathVariable Long id) {
+	public ResponseEntity<ItemDto> getById(@PathVariable Integer id) {
 		System.out.println("Item id  = " + id);
 
-		return new ResponseEntity<>(new ItemDto(), HttpStatus.OK);
+		ItemDto itemDto = itemService.findById(id);
+		return new ResponseEntity<>(itemDto, HttpStatus.OK);
 	}
 
 
