@@ -8,7 +8,6 @@ import com.sda.auction.repository.ItemRepository;
 import com.sda.auction.repository.UserRepository;
 import com.sda.auction.service.ItemService;
 import java.text.ParseException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,5 +50,18 @@ public class ItemServiceImpl implements ItemService {
 
 		Item item = optionalItem.get();
 		return itemMapper.convert(item);
+	}
+
+	@Override
+	public List<ItemDto> findAllForBidding() {
+		List<Item> items = itemRepository.findAllForBidding();
+		return itemMapper.convert(items);
+	}
+
+	@Override
+	public ItemDto findByIdForUser(Integer id) {
+		ItemDto itemDto = findById(id);
+		itemDto.resetOwner();
+		return itemDto;
 	}
 }

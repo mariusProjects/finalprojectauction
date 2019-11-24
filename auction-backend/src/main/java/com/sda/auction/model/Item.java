@@ -58,4 +58,8 @@ public class Item {
 	@OneToMany(mappedBy = "item", cascade = CascadeType.ALL)
 
 	private Set<Bid> bids = new HashSet<>();
+
+	public String getOwnersName() {
+		return owner.getFriendlyName();
+	}
 }

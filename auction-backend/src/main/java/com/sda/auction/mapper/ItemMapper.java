@@ -54,6 +54,7 @@ public class ItemMapper {
 		String photo = new String(Base64.getDecoder().decode(item.getPhoto().getBytes()));
 		itemDto.setPhoto(photo);
 
+		itemDto.setOwner(item.getOwnersName());
 		return itemDto;
 	}
 

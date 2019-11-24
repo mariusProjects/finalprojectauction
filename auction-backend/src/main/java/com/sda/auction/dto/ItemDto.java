@@ -36,4 +36,9 @@ public class ItemDto {
 	@NotEmpty
 	private String photo;
 
+	private String owner;
+
+	public void resetOwner() {
+		owner = null;
+	}
 }

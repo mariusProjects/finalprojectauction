@@ -64,4 +64,8 @@ public class User {
 		}
 		return result;
 	}
+
+	public String getFriendlyName() {
+		return "Mr. " + firstName + " " + lastName;
+	}
 }
