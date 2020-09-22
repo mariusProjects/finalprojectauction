@@ -7,11 +7,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
-@AllArgsConstructor
 public class ErrorResponseDto {
 
 	private int code;
 	private String message;
+
+	public ErrorResponseDto(int code, String message) {
+		this.code = code;
+		this.message = message;
+	}
 
 	@JsonIgnore
 	public byte[] getBytes() throws JsonProcessingException {

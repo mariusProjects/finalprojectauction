@@ -30,7 +30,7 @@ import lombok.ToString;
 @Entity
 @Table(name = "item")
 @Data
-@EqualsAndHashCode(exclude = "user")
+@EqualsAndHashCode(exclude = "owner")
 public class Item {
 
 	@Id

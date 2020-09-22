@@ -6,16 +6,16 @@ function login() {
   const email = $("form#login_form input#email").val();
   const password = $("form#login_form input#password").val();
   const loginDto = JSON.stringify({ email, password });
-
+calStorage.jwt);
   $.ajax({
-    url: 'http://localhost:8080/api/login',
-    dataType: 'json',
-    type: 'post',
-    contentType: 'application/json',
-    data: loginDto,
+    url: 'http://localhost:8080/api/login',  //adresa la care este trimisa cererea AJAX
+    dataType: 'json',  //tip date asteptat ca raspuns de la server
+    type: 'post',  //tipul prin care sunt trimise datele
+    contentType: 'application/json',     //tip date trimis la server
+    data: loginDto,  //datele care sunt trimise la server
     success: function (data, textStatus, jQxhr) {
       localStorage.jwt = data.jwt;
-      console.log('success: ' + localStorage.jwt);
+      console.log('success: ' + lo
       window.location.href = "home.html";
     },
     error: function (jqXhr, textStatus, errorThrown) {
