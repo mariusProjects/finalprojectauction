@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3e405735-c8e5-48e4-af2d-bc360a134a69" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/AuctionApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/config/ApplicationConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/config/CorsFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/config/SecurityFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/controller/AdminItemController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/controller/BidItemController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/controller/HeaderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/controller/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/controller/Registration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/controller/UserItemController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/dto/BidDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/dto/ErrorResponseDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/dto/HeaderDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/dto/ItemDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/dto/LoginDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/dto/UserDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/jwt/TokenProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/mapper/BidMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/mapper/HeaderMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/mapper/ItemMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/model/Bid.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/model/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/model/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/repository/BidRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/repository/ItemRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/repository/RoleRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/service/BidService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/service/ItemService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/service/SecurityService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/service/impl/AccessDeniedHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/service/impl/BidServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/service/impl/ItemServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/service/impl/SecurityServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/util/DateConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/validator/BidValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/java/com/sda/auction/validator/UserDtoValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/resources/banner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/main/resources/validation/message.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-backend/src/test/java/com/sda/auction/AuctionApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/addItem.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/itemPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/myItems.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/Fevicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/add.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/author.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/blog1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/blog2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/blog3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/c1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/c2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/c3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/c4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/c5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/c6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/cat-post/cat-post-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/cat-post/cat-post-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/cat-post/cat-post-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/causes/causes-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/causes/causes-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/causes/causes-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/feature-img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/latest-post/l-post-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/latest-post/l-post-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/latest-post/l-post-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/latest-post/l-post-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/main-blog/m-blog-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/main-blog/m-blog-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/main-blog/m-blog-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/main-blog/m-blog-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/main-blog/m-blog-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/next.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/popular-post/post1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/popular-post/post2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/popular-post/post3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/popular-post/post4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/post-img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/post-img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/blog/prev.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/cart.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/cart/cart1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/cart/cart2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/cart/cart3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/category/c1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/category/c2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/category/c3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/category/c4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/category/c5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/category/s-p1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/gallery/r1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/gallery/r2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/gallery/r3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/gallery/r5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/gallery/r7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/gallery/r8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/home/hero-banner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/home/hero-slide1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/home/hero-slide2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/home/hero-slide3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/home/parallax-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/instagram/Image-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/instagram/Image-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/instagram/Image-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/instagram/Image-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/instagram/Image-05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/instagram/Image-06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/instagram/Image-07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/instagram/Image-08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/instagram/ins-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/instagram/ins-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/instagram/ins-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/instagram/ins-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/instagram/ins-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/instagram/ins-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/login.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/product/card.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/product/product-sm-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/product/product-sm-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/product/product-sm-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/product/product-sm-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/product/product-sm-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/product/product-sm-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/product/product-sm-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/product/product-sm-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/product/product-sm-9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/product/product1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/product/product2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/product/product3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/product/product4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/product/product5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/product/product6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/product/product7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/product/product8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/product/review-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/product/review-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/product/review-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/r1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/r10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/r11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/r12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/r2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/r3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/r4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/r5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/r6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/r7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/r8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/img/r9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/js/addItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/js/home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/js/itemPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/js/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/js/register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/bootstrap/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/bootstrap/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/contact.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/fontawesome/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/fontawesome/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/fontawesome/css/all.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/fontawesome/webfonts/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/fontawesome/webfonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/fontawesome/webfonts/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/fontawesome/webfonts/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/fontawesome/webfonts/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/fontawesome/webfonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/fontawesome/webfonts/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/fontawesome/webfonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/fontawesome/webfonts/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/fontawesome/webfonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/fontawesome/webfonts/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/fontawesome/webfonts/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/jquery.ajaxchimp.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/jquery.form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/jquery.validate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/jquery/jquery-3.2.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/linericon/fonts/Linearicons-Free.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/linericon/fonts/Linearicons-Free.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/linericon/fonts/Linearicons-Free.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/linericon/fonts/Linearicons-Free.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/linericon/fonts/Linearicons-Free.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/linericon/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/mail-script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/nice-select/jquery.nice-select.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/nice-select/nice-select.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/nouislider/nouislider.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/nouislider/nouislider.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/owl-carousel/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/owl-carousel/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/owl-carousel/owl.theme.default.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/skrollr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/Italic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/agenda.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/alarm-clock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/alert.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/align-center.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/align-justify.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/align-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/align-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/anchor.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/android.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/angle-double-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/angle-double-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/angle-double-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/angle-double-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/angle-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/angle-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/angle-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/angle-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/announcement.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/apple.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/archive.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/arrow-circle-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/arrow-circle-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/arrow-circle-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/arrow-circle-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/arrow-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/arrow-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/arrow-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/arrow-top-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/arrow-top-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/arrow-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/arrows-corner.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/arrows-horizontal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/arrows-vertical.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/back-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/back-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/bag.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/bar-chart-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/bar-chart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/basketball.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/bell.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/blackboard.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/bolt-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/bolt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/book.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/bookmark-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/bookmark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/briefcase.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/brush-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/brush.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/calendar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/camera.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/car.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/check-box.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/check.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/clip.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/clipboard.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/close.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/cloud-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/cloud-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/cloud.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/comment-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/comment.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/comments-smiley.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/comments.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/control-backward.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/control-eject.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/control-forward.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/control-pause.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/control-play.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/control-record.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/control-shuffle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/control-skip-backward.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/control-skip-forward.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/control-stop.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/credit-card.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/crown.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/css3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/cup.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/cut.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/dashboard.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/desktop.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/direction-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/direction.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/download.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/dribbble.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/dropbox-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/dropbox.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/drupal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/email.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/envelope.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/eraser.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/exchange-vertical.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/export.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/eye.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/face-sad.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/face-smile.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/facebook.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/file.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/files.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/filter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/flag-alt-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/flag-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/flag.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/flickr-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/flickr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/folder.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/fullscreen.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/gallery.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/game.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/gift.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/github.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/google.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/hand-drag.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/hand-open.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/hand-point-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/hand-point-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/hand-point-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/hand-point-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/hand-stop.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/harddrive.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/harddrives.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/headphone-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/headphone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/heart-broken.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/heart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/help-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/help.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/home.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/html5.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/hummer.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/id-badge.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/image.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/import.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/infinite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/info-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/info.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/ink-pen.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/instagram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/joomla.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/jsfiddle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/key.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layers-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layers.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-accordion-list.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-accordion-merged.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-accordion-separated.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-column2-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-column2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-column3-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-column3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-column4-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-column4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-cta-btn-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-cta-btn-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-cta-center.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-cta-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-cta-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-grid2-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-grid2-thumb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-grid2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-grid3-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-grid3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-grid4-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-grid4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-line-solid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-list-large-image.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-list-post.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-list-thumb-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-list-thumb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-media-center-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-media-center.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-media-left-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-media-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-media-overlay-alt-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-media-overlay-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-media-overlay.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-media-right-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-media-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-menu-full.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-menu-separated.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-menu-v.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-menu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-placeholder.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-sidebar-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-sidebar-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-sidebar-none.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-sidebar-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-slider-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-slider.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-tab-min.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-tab-v.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-tab-window.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-tab.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-width-default-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-width-default.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout-width-full.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/layout.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/light-bulb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/line-dashed.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/line-dotted.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/line-double.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/link.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/linkedin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/linux.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/list-ol.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/list.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/location-arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/location-pin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/lock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/loop.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/magnet.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/map-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/map.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/marker-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/marker.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/medall-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/medall.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/menu-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/menu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/microphone-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/microphone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/microsoft-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/microsoft.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/minus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/mobile.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/money.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/more-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/more.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/mouse-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/mouse.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/music-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/music.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/na.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/new-window.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/notepad.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/package.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/paint-bucket.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/paint-roller.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/palette.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/panel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/paragraph.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/pencil-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/pencil-alt2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/pencil.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/pie-chart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/pin-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/pin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/pin2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/pinterest-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/pinterest.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/plug.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/plus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/power-off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/printer.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/pulse.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/quote-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/quote-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/receipt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/reddit.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/reload.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/rocket.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/rss-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/rss.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/ruler-alt-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/ruler-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/ruler-pencil.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/ruler.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/save-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/save.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/search.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/server.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/settings.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/share-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/share.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/sharethis-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/sharethis.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/shield.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/shift-left-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/shift-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/shift-right-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/shift-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/shine.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/shopping-cart-full.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/shopping-cart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/shortcode.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/signal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/skype.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/slice.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/smallcap.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/soundcloud.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/split-h.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/split-v-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/split-v.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/spray.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/stack-overflow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/stamp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/star.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/stats-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/stats-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/support.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/tablet.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/tag.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/target.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/text.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/themify-favicon-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/themify-favicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/themify-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/thought.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/thumb-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/thumb-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/ticket.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/time.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/timer.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/trash.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/trello.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/truck.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/tumblr-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/tumblr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/twitter-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/twitter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/underline.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/unlink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/unlock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/upload.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/uppercase.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/user.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/vector.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/video-camera.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/video-clapper.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/view-grid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/view-list-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/view-list.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/vimeo-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/vimeo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/volume.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/wallet.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/wand.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/wheelchair.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/widget-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/widget.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/widgetized.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/window.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/wordpress.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/world.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/write.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/yahoo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/youtube.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/zip.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/zoom-in.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/SVG/zoom-out.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/Themify IconFonts 5-23-2014.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/demo-files/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/fonts/themify.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/fonts/themify.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/fonts/themify.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/fonts/themify.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/ie7/ie7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/ie7/ie7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-frontend/resources/vendors/themify-icons/themify-icons.css" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/finalProject-SDA5/auction-backend/src/main/java/com/sda/auction/repository/BidRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/finalProject-SDA5/auction-backend/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="89" column="19" lean-forward="true" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="167" column="99" lean-forward="true" selection-start-line="167" selection-start-column="99" selection-end-line="167" selection-end-column="99" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backintime/.idea/misc.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backintime/.idea/modules.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="98" selection-start-line="4" selection-start-column="98" selection-end-line="4" selection-end-column="98" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backintime/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/finalProject-SDA5/auction-backend/pom.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/backintime/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="10" />
+    <option name="y" value="17" />
+    <option name="width" value="195" />
+    <option name="height" value="52" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="FinalProjectAuction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinalProjectAuction" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3e405735-c8e5-48e4-af2d-bc360a134a69" name="Default Changelist" comment="" />
+      <created>1599545381291</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599545381291</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25809062" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/finalProject-SDA5/auction-backend/src/main/java/com/sda/auction/config/ApplicationConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalProject-SDA5/auction-backend/src/main/java/com/sda/auction/config/CorsFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalProject-SDA5/auction-backend/src/main/java/com/sda/auction/config/SecurityFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalProject-SDA5/auction-backend/src/main/java/com/sda/auction/controller/AdminItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="37" column="70" selection-start-line="37" selection-start-column="70" selection-end-line="37" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalProject-SDA5/auction-backend/src/main/java/com/sda/auction/controller/BidItemController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalProject-SDA5/auction-backend/src/main/java/com/sda/auction/mapper/BidMapper.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalProject-SDA5/auction-backend/src/main/java/com/sda/auction/model/Bid.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalProject-SDA5/auction-backend/src/main/java/com/sda/auction/repository/ItemRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalProject-SDA5/auction-backend/src/main/java/com/sda/auction/service/BidService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalProject-SDA5/auction-backend/src/main/java/com/sda/auction/service/impl/BidServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalProject-SDA5/auction-backend/src/main/java/com/sda/auction/util/DateConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalProject-SDA5/auction-backend/src/main/java/com/sda/auction/validator/BidValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalProject-SDA5/auction-backend/src/main/java/com/sda/auction/AuctionApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backintime/src/Methods.java" />
+    <entry file="file://$PROJECT_DIR$/backintime/src/CMMDC.java" />
+    <entry file="file://$PROJECT_DIR$/backintime/src/Palindrom.java" />
+    <entry file="file://$PROJECT_DIR$/backintime/src/Main.java" />
+    <entry file="file://$PROJECT_DIR$/finalProject-SDA5/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalProject-SDA5/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalProject-SDA5/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalProject-SDA5/auction-backend/.mvn/wrapper/maven-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalProject-SDA5/auction-backend/.mvn/wrapper/MavenWrapperDownloader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1122">
+          <folding>
+            <element signature="e#0#4939#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/FINAL_PROJECT_AUCTION.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalProject-SDA5/auction-backend/.mvn/.mvn.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalProject-SDA5/auction-backend/src/main/java/com/sda/auction/repository/BidRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalProject-SDA5/auction-backend/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="89" column="19" lean-forward="true" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="167" column="99" lean-forward="true" selection-start-line="167" selection-start-column="99" selection-end-line="167" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backintime/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backintime/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="98" selection-start-line="4" selection-start-column="98" selection-end-line="4" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backintime/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
