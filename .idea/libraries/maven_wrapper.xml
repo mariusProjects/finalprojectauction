@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="maven-wrapper">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/finalProject-SDA5/auction-backend/.mvn/wrapper/maven-wrapper.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

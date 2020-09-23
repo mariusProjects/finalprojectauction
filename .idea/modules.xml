@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/FINAL_PROJECT_AUCTION.iml" filepath="$PROJECT_DIR$/.idea/FINAL_PROJECT_AUCTION.iml" />
+      <module fileurl="file://$PROJECT_DIR$/finalProject-SDA5/auction-backend/.mvn/.mvn.iml" filepath="$PROJECT_DIR$/finalProject-SDA5/auction-backend/.mvn/.mvn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/finalProject-SDA5/auction-backend/src/main/main.iml" filepath="$PROJECT_DIR$/finalProject-SDA5/auction-backend/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/finalProject-SDA5/auction-backend/src/test/test.iml" filepath="$PROJECT_DIR$/finalProject-SDA5/auction-backend/src/test/test.iml" />
     </modules>
   </component>
 </project>
